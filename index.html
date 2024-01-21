@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headlines - The Lorem Ipsum</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    <!-- Lägg detta längst upp i <body> sektionen -->
+<div id="disclaimerModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Disclaimer</h2>
+      <p>
+        Denna webbplats och all information samt handledningar som tillhandahålls här är endast avsedda för utbildningsändamål.
+        Vi tar inget ansvar för eventuella olagliga eller oetiska handlingar som besökare till webbplatsen kan utföra.
+        Användningen av informationen på denna webbplats sker på egen risk.
+      </p>
+      <!-- Lägg till övrig text från din disclaimer här -->
+      <button onclick="acceptDisclaimer()">Jag accepterar</button>
+    <button onclick="goToCyberSecurityLaw()">Läs mer om lagen för cybersäkerhet</button>
+
+    </div>
+  </div>
+  
+  <script>
+      // JavaScript för att kontrollera modalfönstret och andra funktioner
+  function acceptDisclaimer() {
+    closeModal();
+    // Här kan du lägga till logik för vad som ska hända när användaren accepterar villkoren, t.ex. ladda resten av sidan.
+  }
+
+  function closeModal() {
+    document.getElementById("disclaimerModal").style.display = "none";
+  }
+
+  // Visa modalfönstret när sidan laddas
+  window.onload = function () {
+    document.getElementById("disclaimerModal").style.display = "block";
+  };
+
+  // Flytta goToCyberSecurityLaw utanför window.onload
+  function goToCyberSecurityLaw() {
+    // Använd en absolut länk
+    window.location.href =
+      "https://www.msb.se/sv/amnesomraden/informationssakerhet-cybersakerhet-och-sakra-kommunikationer/nis-direktivet/lag-forordning-och-foreskrifter/";
+  
+  }
+  
+  
+    
+</script>
+  
+  
+    <div class="container">
+        <header>
+            <div class="logga">
+                <img src="pauli-hotels-logga.webp" alt="loggan" srcset="pauli-hotels-logga.webp">
+            </div>
+            <nav class="topnav" id="myTopnav">
+                <a href="#">Startsida</a>
+                <a href="#">Anonymitet</a>
+                <a href="#">Wi-fi</a>
+                <a href="#">Phishing</a>
+                <a href="#">Extra</a>
+                <a href="#">Skydd</a>
+                <a href="javascript:void(0);" class="icon" onclick="topnav()">&#9776;</a>
+         
+            </nav>
+        </header>
+
+        <main>
+            <div class="why">
+                <div class="varf">
+                    <h2>Välkommna!</h2>
+                    <p>
+                        Hej och välkommna till vår sida!   </p>
+                        <p>På denna sidan kommer ni att lära er mycket nytt om internet.</p>
+                        <p>Eftersom att detta är ett gymnasiearbete och vi inte är specialister i området, kan vi säga något fel.</p>
+                        <p>Så om du har några förslag på förbättringar eller frågor kan du kontakta oss via mail:</p>
+                        <p>utbfilvod@skola.malmo.se</p>
+                        <p>utbkaczyc@skola.malmo.se</p>  
+                  
+
+                </div>
+            </div>
+            <div class="rum">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dx6kFHb0BsA" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="copy1">
+                <p>lorem ipsum</p>
+                <p>lorem ipsum</p>
+
+
+            </div>
+            <div class="copy2">
+                <p>lorem ipsum</p>
+                <p>lorem ipsum</p>
+                
+            </div>
+        </main>
+        <footer>
+            <p> Pauliskolan | TE21A | Dimitri Vodianoi & Olivier Zyc</p>
+        </footer>
+    </div>
+
+</body>
+
+
+
+</html>
